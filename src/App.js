@@ -110,7 +110,8 @@ export default function App() {
 
         <section>
           <h1 className="SectionTitle">Services</h1>
-          <div className="GridLayoutThreeColumns">
+          <div className={isDesktopOrLaptop ? "GridLayoutThreeColumns" : "GridLayoutTwoColumns"}
+            style={{rowGap: '4vh', columnGap: '4vw'}}>
 
             <div className="ServicesGridItem">
               <img className="ServicesLogo" src={img_javascriptLogo}/> 
