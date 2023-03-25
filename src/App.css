@@ -18,6 +18,12 @@ h4 {
   color: grey;
 }
 
+li {
+  font-size: 1.5vh;
+  color: whitesmoke;
+  margin-bottom: 5px;
+}
+
 article {
   background-color: #1e1e1e;
   padding: 2%;
@@ -27,7 +33,6 @@ section {
   margin-top: 6vh;
   align-items: center;
   display: flex;
-  padding: 2%;
   border-radius: 8px;
   flex-direction: column;
 }
@@ -42,8 +47,8 @@ section {
 }
 
 .AboutUsGridItem {
-  width: 40vw;
-  height: 40vh;
+  width: 45vw;
+  height: 45vh;
   background-position: center center;
   background-size: cover;
   justify-content: center;

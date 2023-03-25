@@ -1,4 +1,5 @@
-import img_logoPassionIT from '/src/res/images/PassionIT_logoGrey.png';
+import img_logoPassionIT from '/Users/jalen/WebProjects/passionit_web/src/res/images/PassionIT_logoGrey.png';
+///Users/jalen/WebProjects/passionit_web
 import { HelmetProvider } from 'react-helmet-async';
 import { Helmet } from 'react-helmet-async';
 import './Header.css';
