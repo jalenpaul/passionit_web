@@ -1,6 +1,7 @@
 {
   "projects": {
-    "PassionIT": "passionit-6ecfc"
+    "PassionIT": "passionit-6ecfc",
+    "default": "passionit-6ecfc"
   },
   "targets": {},
   "etags": {}
