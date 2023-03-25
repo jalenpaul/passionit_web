@@ -16,6 +16,9 @@ import $ from 'jquery';
 import Header from './widgets/Header';
 //animation library
 import { color, motion } from 'framer-motion';
+//responsive layouts library
+import { useMediaQuery } from 'react-responsive'
+
 
 
 export default function App() {
@@ -64,9 +67,7 @@ export default function App() {
       </div>
 
       <article>
-
-
-        <section id="section_services">
+        <section>
           <div className="GridLayoutTwoColumns">
 
             <div className="AboutUsGridItem" style={{backgroundImage: `url(${img_wireframeSS})`, borderTopLeftRadius: '16px'}}>
