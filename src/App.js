@@ -26,6 +26,15 @@ export default function App() {
   //refs
   const divMainDisplay = useRef(null);
 
+  //react responsive (lib)
+  const isDesktopOrLaptop = useMediaQuery({
+    query: '(min-width: 1224px)'
+  })
+  const isBigScreen = useMediaQuery({ query: '(min-width: 1824px)' });
+  const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' });
+  const isPortrait = useMediaQuery({ query: '(orientation: portrait)' });
+  const isRetina = useMediaQuery({ query: '(min-resolution: 2dppx)' });
+
   useEffect(() => {
     $(window).on("scroll", function(e) {
       if ($(window).scrollTop() >= divMainDisplay.current?.clientHeight) {
@@ -79,14 +88,14 @@ export default function App() {
             <div className="AboutUsGridItem" style={{backgroundColor: "#252526", borderBottomLeftRadius: '16px'}}>
               <h3 style={{padding: '4%'}}>We provide solutions of all sorts, including (but not limited to):</h3>
               <ul style={{textAlign: "start"}}>
-                <li style={{marginBottom: "3%", color: "whitesmoke"}}>Creating or updating websites and mobile applications</li>
-                <li style={{marginBottom: "3%" , color: "whitesmoke"}}>Setting up web domains with SSL</li>
-                <li style={{marginBottom: "3%" , color: "whitesmoke"}}>Debugging and updating existing software</li>
-                <li style={{marginBottom: "3%" , color: "whitesmoke"}}>Payment services</li>
-                <li style={{marginBottom: "3%", color: "whitesmoke"}}>Implementing third party APIs or software</li>
-                <li style={{marginBottom: "3%", color: "whitesmoke"}}>Cloud services</li>
-                <li style={{marginBottom: "3%", color: "whitesmoke"}}>Location and navigation services (Google Maps)</li>
-                <li style={{marginBottom: "3%", color: "whitesmoke"}}>Relational and non-relational databases</li>
+                <li style={{marginBottom: "3%", color: "whitesmoke", fontSize: "1.5vh"}}>Creating or updating websites and mobile applications</li>
+                <li style={{marginBottom: "3%" , color: "whitesmoke", fontSize: "1.5vh"}}>Setting up web domains with SSL</li>
+                <li style={{marginBottom: "3%" , color: "whitesmoke", fontSize: "1.5vh"}}>Debugging and updating existing software</li>
+                <li style={{marginBottom: "3%" , color: "whitesmoke", fontSize: "1.5vh"}}>Payment services</li>
+                <li style={{marginBottom: "3%", color: "whitesmoke", fontSize: "1.5vh"}}>Implementing third party APIs or software</li>
+                <li style={{marginBottom: "3%", color: "whitesmoke", fontSize: "1.5vh"}}>Cloud services</li>
+                <li style={{marginBottom: "3%", color: "whitesmoke", fontSize: "1.5vh"}}>Location and navigation services (Google Maps)</li>
+                <li style={{marginBottom: "3%", color: "whitesmoke", fontSize: "1.5vh"}}>Relational and non-relational databases</li>
               </ul>
             </div>
 
